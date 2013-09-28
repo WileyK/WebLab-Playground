@@ -1,0 +1,34 @@
+
+
+//problem 2
+
+
+<input type="text"  name="The Great Gatsby[]" id="books">
+<input type="text"  name="Jumanji[]" id="books">
+<input type="text"  name="War and Peace[]" id="books">
+
+
+
+  var elem = document.getElementById("books");
+  var names = [];
+  for (var i = 0; i < elem.length; ++ i) {
+     names += elem[i]+'|';
+  }
+  var booktype = names;
+  
+
+  
+  
+  // example 2
+  
+  
+  var elem = document.getElementsByTagName("input");
+  var names = [];
+  for (var i = 0; i < elem.length; ++i) {
+    if (typeof elem[i].attributes.id !== "undefined") {
+      if (elem[i].attributes.id.value == "webcampics") {
+        names.push(elem[i].value);
+      }
+    }
+  }
+  var booktype = names;
